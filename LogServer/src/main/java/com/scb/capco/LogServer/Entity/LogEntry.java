@@ -2,7 +2,8 @@ package com.scb.capco.LogServer.Entity;
 
 import java.util.Date;
 
-import org.slf4j.event.Level;
+import ch.qos.logback.classic.Level;
+
 
 public class LogEntry {
 	
