@@ -10,12 +10,181 @@
 		</encoder>
 	</appender>
 
-	<appender name="test" class="ch.qos.logback.core.FileAppender">
+	<appender name="Application" class="ch.qos.logback.core.FileAppender">
 		<append>true</append>
-		<file>${APPLICATION_HOME}/test.log</file><!-- addd respective application 
+		<file>${APPLICATION_HOME}/Application.log</file><!-- addd respective application 
 			name -->
 		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>%date{dd MMM yyyy;HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+			<Pattern>[%thread] %-5level %logger{36} - %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+		<appender name="Otp" class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/Otp.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="Login"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/Login.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="PhoneNumber"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/PhoneNumber.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="SecurityQuestions"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/SecurityQuestions.log</file><!-- addd respective 
+			application name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="Payment"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/Payment.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="Documents"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/Documents.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="MyAccount"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/MyAccount.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="PolicyDashboard"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/PolicyDashboard.log</file><!-- addd respective 
+			application name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="PushNotification"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/PushNotification.log</file><!-- addd respective 
+			application name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="GetFNA"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/GetFNA.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="GetFit"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/GetFit.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="ActivityLog"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/ActivityLog.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="CMS" class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/CMS.log</file><!-- addd respective application 
+			name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="CustomerRegistration"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/CustomerRegistration.log</file><!-- addd respective 
+			application name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+
+	<appender name="GeneralApplication"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${APPLICATION_HOME}/GeneralApplication.log</file><!-- addd respective 
+			application name -->
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	
+	
+	<appender name="Audit"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${AUDIT_HOME}/Audit.log</file>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
+		</layout>
+		<prudent>true</prudent>
+	</appender>
+	<appender name="Transaction"
+		class="ch.qos.logback.core.FileAppender">
+		<append>true</append>
+		<file>${TRANSACTION_HOME}/Transaction.log</file>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%-5level %msg%n</Pattern>
 		</layout>
 		<prudent>true</prudent>
 	</appender>
@@ -23,8 +192,57 @@
 	<root level="info">
 		<appender-ref ref="STDOUT" />
 	</root>
-	<logger name="test" level="info">
-		<appender-ref ref="test" />
+		<logger name="Otp" level="info">
+		<appender-ref ref="Otp" />
+	</logger>
+	<logger name="Login" level="info">
+		<appender-ref ref="Login" />
+	</logger>
+	<logger name="PhoneNumber" level="info">
+		<appender-ref ref="PhoneNumber" />
+	</logger>
+	<logger name="SecurityQuestions" level="info">
+		<appender-ref ref="SecurityQuestions" />
+	</logger>
+	<logger name="Payment" level="info">
+		<appender-ref ref="Payment" />
+	</logger>
+	<logger name="Documents" level="info">
+		<appender-ref ref="Documents" />
+	</logger>
+	<logger name="MyAccount" level="info">
+		<appender-ref ref="MyAccount" />
+	</logger>
+	<logger name="PolicyDashboard" level="info">
+		<appender-ref ref="PolicyDashboard" />
+	</logger>
+	<logger name="PushNotification" level="info">
+		<appender-ref ref="PushNotification" />
+	</logger>
+	<logger name="GetFNA" level="info">
+		<appender-ref ref="GetFNA" />
+	</logger>
+	<logger name="GetFit" level="info">
+		<appender-ref ref="GetFit" />
+	</logger>
+	<logger name="ActivityLog" level="info">
+		<appender-ref ref="ActivityLog" />
+	</logger>
+	<logger name="CMS" level="info">
+		<appender-ref ref="CMS" />
+	</logger>
+	<logger name="CustomerRegistration" level="info">
+		<appender-ref ref="CustomerRegistration" />
+	</logger>
+
+	<logger name="GeneralApplication" level="info">
+		<appender-ref ref="GeneralApplication" />
+	</logger>
+	<logger name="Transaction" level="info">
+		<appender-ref ref="Transaction" />
+	</logger>
+	<logger name="Audit" level="info">
+		<appender-ref ref="Audit" />
 	</logger>
 	
 </configuration> 

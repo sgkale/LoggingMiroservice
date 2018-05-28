@@ -11,12 +11,18 @@ import com.capco.logger.SCBLoggerFactory;
 @RestController
 public class TestController {
 
-	final static SCBLogger logger=SCBLoggerFactory.getSCBLogger(TestController.class);
+	final static SCBLogger logger=SCBLoggerFactory.getApplicationLogger(TestController.class);
+	final static SCBLogger logger2=SCBLoggerFactory.getAuditLogger(TestController.class);
+	final static SCBLogger logger3=SCBLoggerFactory.getTransactionLogger(TestController.class);
 	
 	@GetMapping
 	@RequestMapping("/log/{data}")
 	public String test(@PathVariable("data") String data) {
-		logger.info(data);
+		logger.info(data+"application");
+		logger2.info(data+"audit");
+		logger3.info(data+"transaction");
+		test2 obj=new test2();
+		obj.test("data");
 		return "logged";
 	}
 }

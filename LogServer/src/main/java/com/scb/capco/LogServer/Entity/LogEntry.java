@@ -1,12 +1,23 @@
-package com.example.LogServer.Entity;
+package com.scb.capco.LogServer.Entity;
 
 import java.util.Date;
+
+import org.slf4j.event.Level;
 
 public class LogEntry {
 	
 	private String message;
 	private Date date;
 	private String originService;
+	private Level level;
+	private String logFileName;
+	
+	public String getLogFileName() {
+		return logFileName;
+	}
+	public void setLogFileName(String logFileName) {
+		this.logFileName = logFileName;
+	}
 	public String getMessage() {
 		return message;
 	}
@@ -25,8 +36,11 @@ public class LogEntry {
 	public void setOriginService(String originService) {
 		this.originService = originService;
 	}
+	public Level getLevel() {
+		return level;
+	}
+	public void setLevel(Level level) {
+		this.level = level;
+	}
 	
-	
-	
-
 }
