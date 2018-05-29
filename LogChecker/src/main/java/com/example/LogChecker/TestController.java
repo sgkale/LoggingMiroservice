@@ -20,8 +20,7 @@ public class TestController {
 	public String test(@PathVariable("data") String data) {
 		logger.info(data+"application");
 		logger2.info(data+"audit");
-		logger3.info(data+"transaction");
-		
+		logger3.info(data+"transaction");		
 		logger.error("error");
 		Exception e=new Exception("test");
 		logger.error("error2"+e);
